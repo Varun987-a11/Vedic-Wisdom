@@ -57,33 +57,40 @@
             border-bottom-color: var(--color-amber-gold);
             transform: translateY(-1px);
         }
+        
+        .navbar {
+            background-color: rgba(15, 8, 28, 0.9); /* Same as history page for consistency */
+            backdrop-filter: blur(5px);
+        }
 
         /* Responsive adjustments */
         @media (max-width: 768px) { /* Medium screens and below */
             .svara-text { font-size: 1.1rem; line-height: 1.8; padding: 0.75rem; }
             .shloka-container { max-width: 95%; }
         }
-        /* Removed the previous custom max-width for desktop, now relying on Tailwind's max-w-6xl */
     </style>
 </head>
-<body class="p-4 md:p-10 flex flex-col items-center">
+<body class="p-4 md:p-10 flex flex-col items-center pt-20 md:pt-24"> 
 
-  <nav class="w-full bg-transparent py-4 fixed top-0 left-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <a href="index.html" class="flex-shrink-0 text-xl font-bold text-yellow-300 hover:text-white transition duration-300 tracking-wider">
-            Vedic Wisdom
-        </a>
-        <div class="flex items-center space-x-4">
-            <a href="nasadiya-svara.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Svara Text</a>
-            <a href="nasadiya-meaning.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Meanings</a>
-            <a href="essence.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Essence</a>
+    <nav class="w-full py-4 fixed top-0 left-0 z-50 navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            
+<a href="index.html" class="flex-shrink-0 text-xl font-bold text-yellow-300 hover:text-white transition duration-300 tracking-wider">
+                Vedic Wisdom
+            </a>
+            
+<div class="flex items-center space-x-4">
+                <a href="vedic-history.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Veda History</a>
+                <a href="nasadiya-svara.html" class="text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300 border border-amber-gold">Svara Text</a>
+                <a href="nasadiya-meaning.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Meanings</a>
+                <a href="essence.html" class="text-gray-300 hover:text-amber-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Essence</a>
+            </div>
         </div>
-    </div>
-</nav>
-
-    <header class="text-center mb-8 md:mb-12 max-w-4xl w-full">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-300 mb-2 mt-4 tracking-widest">
-            Nāsadīya Sūktam <br> (Ṛgveda 10.129)
+    </nav>
+    
+<header class="text-center mb-8 md:mb-12 max-w-4xl w-full mt-4"> 
+<h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-300 mb-2 mt-4 tracking-widest">
+            Nāsadīya Sūktam (Ṛgveda 10.129)
         </h1>
         <h2 class="text-lg md:text-xl text-gray-400 italic">
             (The Hymn of Creation)
@@ -93,9 +100,9 @@
 
     <main class="shloka-container max-w-6xl w-full mx-auto p-0 rounded-xl shadow-2xl overflow-hidden">
 
-        <!-- <h3 class="text-lg font-bold text-amber-500 p-4 md:p-5 mb-0 border-b border-amber-500/50">
+        <h3 class="text-lg font-bold text-amber-500 p-4 md:p-5 mb-0 border-b border-amber-500/50">
             Text with Svara Marks (Roman Transliteration)
-        </h3> -->
+        </h3>
 
         <a href="nasadiya-meaning.html#stanza1" class="shloka-link block">
             <pre class="svara-text">
@@ -142,12 +149,13 @@ yó asyā́dhyakṣaḥ paramé vyóman só aṅgá vedá yádi vā ná véda �
     </main>
     
     <footer class="mt-12 text-center text-sm text-gray-500">
-        <p>Ensure you create the destination file: <code class="text-amber-400">nasadiya-meaning.html</code></p>
+        <p>Ensure you create the destination files: <code class="text-amber-400">nasadiya-meaning.html</code> and <code class="text-amber-400">essence.html</code></p>
         <p class="mt-4 text-sm text-gray-500">
-            Click on any stanza to reveal its poetic meaning.
+            Click on any stanza above for direct link to its meaning.
         </p>
-        <a href="essence.html" class="inline-block mt-4 text-amber-gold hover:text-white transition duration-300 tracking-wider font-semibold">
-            Read the Ultimate Summary &rarr;
+        
+<a href="vedic-history.html" class="inline-block mt-4 text-amber-gold hover:text-white transition duration-300 tracking-wider font-semibold">
+            &larr; Read the History of the Vedas First
         </a>
     </footer>
 
