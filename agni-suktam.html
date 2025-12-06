@@ -6,11 +6,21 @@
     <title>अग्नि सूक्तम् (ऋग्वेद १.१) | Vedic Wisdom</title>
     
     <style>
-        /* CSS to create a clean, readable theme */
+        /* --- Dark Theme Variables --- */
+        :root {
+            --color-primary-dark: #0A0A1A; /* Very Deep Indigo/Black */
+            --color-secondary-dark: #1F2937; /* Dark Slate Gray */
+            --color-accent-gold: #FFC06E; /* Vibrant Saffron/Gold */
+            --color-text-light: #F9FAFB; /* Off-White */
+            --color-text-secondary: #D1D5DB; /* Light Gray */
+            --color-card-bg: #141E30; /* Slightly lighter dark background for the card */
+        }
+        
+        /* --- General Dark Theme Styles --- */
         body {
             font-family: 'Arial', 'Helvetica', sans-serif;
-            background-color: #f4f4f4; /* Light background */
-            color: #333; /* Dark text */
+            background-color: var(--color-primary-dark);
+            color: var(--color-text-secondary); /* Use light gray text */
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -19,41 +29,67 @@
             width: 90%;
             max-width: 800px;
             margin: 40px auto;
-            background-color: #fff;
+            background-color: var(--color-card-bg); /* Dark card background */
             padding: 20px 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
             border-radius: 8px;
+            border: 1px solid rgba(255, 192, 110, 0.2); /* Subtle gold border */
         }
+        
+        /* --- Heading Styles --- */
         h1 {
-            color: #4b0082; /* Deep violet/purple for main heading */
+            color: var(--color-accent-gold); /* Gold accent for the main heading */
             text-align: center;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 2px solid var(--color-secondary-dark);
             padding-bottom: 10px;
         }
         h2 {
-            color: #555;
+            color: var(--color-text-light); /* Off-white for the subtitle */
             text-align: center;
             margin-top: -10px;
         }
-        /* Style for the mantra text to ensure readability of Swaras */
+        
+        /* --- Description and Prose Styles --- */
+        .description {
+            background-color: var(--color-secondary-dark);
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            border-left: 4px solid var(--color-accent-gold);
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+        }
+        
+        /* --- Mantra Text Styles --- */
+        .mantra-text {
+            border-top: 1px solid var(--color-secondary-dark);
+            padding-top: 20px;
+        }
         .mantra-verse {
-            /* Using a serif font (like Times New Roman) often displays Devanagari and Swaras better */
-            font-family: 'Times New Roman', 'Mangal', serif; 
+            font-family: 'Times New Roman', 'Mangal', serif;
             font-size: 1.5rem;
             text-align: left;
             margin: 20px 0;
             padding: 15px;
-            border-left: 5px solid #ffcc00; /* A yellow/gold accent */
-            background-color: #fffff0; /* Very light cream background for the verse */
-            white-space: pre-wrap; /* Helps preserve line integrity */
+            border-left: 5px solid var(--color-accent-gold); /* Gold accent line */
+            background-color: var(--color-secondary-dark); /* Darker background for the verse block */
+            color: var(--color-text-light); /* Light text for the Sanskrit */
+            white-space: pre-wrap;
+            border-radius: 4px;
         }
 
-        /* Footer style */
+        /* --- Strong Tag Styling for Bold Characters --- */
+        strong {
+            color: var(--color-accent-gold); /* Make bold text stand out with gold color */
+            font-weight: 700;
+        }
+
+        /* --- Footer style --- */
         .footer {
             text-align: center;
             padding-top: 20px;
             margin-top: 30px;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid var(--color-secondary-dark);
             font-size: 0.8rem;
             color: #777;
         }
@@ -61,52 +97,64 @@
 </head>
 <body>
     <div class="container">
-        <h1>★ अग्नि सूक्तम् (Agni Suktam)</h1>
+        <h1>★ <strong>अग्नि सूक्तम्</strong> (Agni Suktam)</h1>
         <h2>ऋग्वेद (Rigveda) १.१</h2>
-        <p style="text-align: center; font-style: italic; color: #666;">**Vedic Hymn to Agni (The Fire God)**</p>
+        
+        <p style="text-align: center; font-style: italic; color: var(--color-text-secondary); margin-bottom: 15px;">
+            **Vedic Hymn to Agni (The Fire God)**
+        </p>
+
+        <div class="description">
+            <p>
+                The **Agni Sūktam** (Hymn to Agni) is the very first hymn (Sukta) of the **entire Ṛgveda** (Mandala 1, Hymn 1), establishing its paramount importance in the Vedic tradition. It comprises **nine verses (mantras)** and is attributed to the Rishi (seer) **Madhuchhandā Vaiśvāmitra**.
+            </p>
+            <p class="mt-2">
+                The hymn is addressed to **Agni** (Fire God), who is described not just as a physical fire, but as the **Purohita** (chief priest), the divine **Ṛtvij** (ritual performer), the **Hotā**** (chief invoker), and the bestower of wealth (**Ratnadhātama**). Agni serves as the crucial link between humanity and the celestial realm, carrying the offerings to the gods. Chanting this Suktam is traditionally done to invoke prosperity, protection, and wisdom.
+            </p>
+        </div>
         
         <div class="mantra-text">
             
             <p class="mantra-verse">
-                अ॒ग्निमी᳚ळे पु॒रोहि॑तं य॒ज्ञस्य॑ दे॒वमृ॒त्विज᳚म् । होता᳚रं रत्न॒धात॑मम् ॥ १.००१.०१
+                अ॒ग्निमी᳚ळे पु॒रोहि॑तं य॒ज्ञस्य॑ दे॒वमृ॒त्विज᳚म् । होता᳚रं रत्न॒धात॑मम् ॥ <strong>१.००१.०१</strong>
             </p>
             
             <p class="mantra-verse">
-                अ॒ग्निः पूर्वे᳚भि॒रृषि॑भि॒रीड्यो॒ नूत॑नैरु॒त । स दे॒वाँ एह व॑क्षति ॥ १.००१.०२
+                अ॒ग्निः पूर्वे᳚भि॒रृषि॑भि॒रीड्यो॒ नूत॑नैरु॒त । स दे॒वाँ एह व॑क्षति ॥ <strong>१.००१.०२</strong>
             </p>
             
             <p class="mantra-verse">
-                अ॒ग्निना᳚ र॒यिम॑श्नव॒त्पोष॑मे॒व दि॒वेदि॑वे । य॒शसं᳚ वी॒रव॑त्तमम् ॥ १.००१.०३
+                अ॒ग्निना᳚ र॒यिम॑श्नव॒त्पोष॑मे॒व दि॒वेदि॑वे । य॒शसं᳚ वी॒रव॑त्तमम् ॥ <strong>१.००१.०३</strong>
             </p>
             
             <p class="mantra-verse">
-                अग्ने॒ यं य॒ज्ञम॑ध्व॒रं वि॒श्वतः॑ परि॒भूरसि॑ । स इद्दे॒वेषु॑ गच्छति ॥ १.००१.०४
+                अग्ने॒ यं य॒ज्ञम॑ध्व॒रं वि॒श्वतः॑ परि॒भूरसि॑ । स इद्दे॒वेषु॑ गच्छति ॥ <strong>१.००१.०४</strong>
             </p>
             
             <p class="mantra-verse">
-                अ॒ग्निर्होता᳚ क॒विक्र॑तुः स॒त्यश्चि॒त्रश्र॑वस्तमः । दे॒वो दे॒वेभि॒रा ग॑मत् ॥ १.००१.०५
+                अ॒ग्निर्होता᳚ क॒विक्र॑तुः स॒त्यश्चि॒त्रश्र॑वस्तमः । दे॒वो दे॒वेभि॒रा ग॑मत् ॥ <strong>१.००१.०५</strong>
             </p>
             
             <p class="mantra-verse">
-                यद॒ङ्ग दा॒शुषे॒ त्वमग्ने᳚ भ॒द्रं क॑रि॒ष्यसि॑ । तवेत्तत्स॒त्यम॑ङ्गिरः ॥ १.००१.०६
+                यद॒ङ्ग दा॒शुषे॒ त्वमग्ने᳚ भ॒द्रं क॑रि॒ष्यसि॑ । तवेत्तत्स॒त्यम॑ङ्गिरः ॥ <strong>१.००१.०६</strong>
             </p>
             
             <p class="mantra-verse">
-                उप॑ त्वाग्ने दि॒वेदि॑वे॒ दोषा᳚वस्तर्धि॒या व॒यम् । नमो॒ भर᳚न्त॒ एम॑सि ॥ १.००१.०७
+                उप॑ त्वाग्ने दि॒वेदि॑वे॒ दोषा᳚वस्तर्धि॒या व॒यम् । नमो॒ भर᳚न्त॒ एम॑सि ॥ <strong>१.००१.०७</strong>
             </p>
             
             <p class="mantra-verse">
-                राज᳚न्तमध्व॒राणां᳚ गो॒पामृ॒तस्य॒ दीदि॑विम् । वर्ध॑मानं॒ स्वे दमे᳚ ॥ १.००१.०८
+                राज᳚न्तमध्व॒राणां᳚ गो॒पामृ॒तस्य॒ दीदि॑विम् । वर्ध॑मानं॒ स्वे दमे᳚ ॥ <strong>१.००१.०८</strong>
             </p>
             
             <p class="mantra-verse">
-                स नः॑ पि॒तेव॑ सू॒नवेऽग्ने᳚ सूपाय॒नो भ॑व । सच॑स्वा नः स्व॒स्तये᳚ ॥ १.००१.०९
+                स नः॑ पि॒तेव॑ सू॒नवेऽग्ने᳚ सूपाय॒नो भ॑व । सच॑स्वा नः स्व॒स्तये᳚ ॥ <strong>१.००१.०९</strong>
             </p>
 
         </div>
         
         <div class="footer">
-            <p>© Vedic Wisdom | Theme inspired by the ancient texts.</p>
+            <p>&copy; 2025 Vedic Wisdom | Theme inspired by the ancient texts.</p>
         </div>
     </div>
 </body>
